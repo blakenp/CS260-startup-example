@@ -26,6 +26,11 @@ The idea of this application is to get more people excited about Family History 
 * **CSS** will be implemented to bootstrap the app's styling and make it look good on all screen sizes
 * **Javascript** will be used a lot for the backend and frontend logic for storing state, variables, etc, and allowing for the user to interact with the app
 * Authentication through a nodejs backend auth service for authenticating with FamilySearch. This will require the user to have an account with FamilySearch and they will authenticate with their FamilySearch credentials by being redirected to FamilySearch's login page through **Oauth**. We could also potentially implement some other type of account creation system individually for this app that could allow users to receive emails or customize personal account settings more
+* **Service** will include backend endpoints for:
+    * Login/Authentication
+    * Retrieving high scores and user data
+    * updating high scores
+    * potentially posting and updating favorite game lists
 * We could use either **MongoDB**, **DynamoDB**, or some other database to include high scores, users' favorite games, or user emails for automated emails. We will have a more concrete idea about this as we discuss it as a developer group
 * We will use **websockets** for game creation/termination so we can create game rooms where other players can join and play. We may implement other features using **websockets** as well, but this will be a good starting point
 * We will most likely use **Nextjs** or **React** for the frontend, and **NodeJs/Express** for the backend. We may try and use **Rust** for the backend, but we will discuss this more as a development team
