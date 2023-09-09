@@ -1,3 +1,4 @@
 This is pretty cool
 
-Chickens are cool too, I don't know about that man...
+Chickens are cool too,
+and milkshakes too!
