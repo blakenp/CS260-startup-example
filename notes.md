@@ -28,3 +28,7 @@ To ssh into it, find your private key and:
 chmod 400 "key.pem"
 ssh -i "key.pem" ubuntu@ec2-3-232-1-70.compute-1.amazonaws.com
 ```
+
+### AWS Route53 DNS Services
+
+I already knew how to register domains and create A records, but this was a good reminder of how to point these records to specific IP addresses. It's always so satisfying to see your domain connected to running code. I registered a domain I will use to create a website for my wife's folklore dance company, so I'm excited to do that in the future.
