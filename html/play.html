@@ -29,72 +29,34 @@
 
     <main>
       <div class="players">
-        Player:
-        <span class="player-name">Mystery player</span>
+        Placings:
       </div>
       <ul class="notification">
-        <li class="player-name">Tim started a new game</li>
-        <li class="player-name">Ada started a new game</li>
-        <li class="player-name">Tim scored 337</li>
+        <li class="player-name">Tim 1st</li>
+        <li class="player-name">Jim 2nd</li>
+        <li class="player-name">Emma 3rd</li>
       </ul>
 
       <!-- More formatting with old style HTML -->
       <br />
 
       <div>
-        <label for="count">Score</label>
+        <label for="count">Final Scores</label>
         <input type="text" id="count" value="--" readonly />
       </div>
 
       <br />
 
       <div>
-        <button>New Game</button>
         <p>Here we will open a websocket connection to create a room for a new game that others can join.</p>
+        <button>New Game</button>
         <p>Example room code id: HRET-FHT</p>
       </div>
 
       <br />
 
       <div>
-        <table>
-          <tr>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <!-- SVG
-                    M move <to x,y>
-                    Q quadratic curve <control point x,y> <to x,y>
-                -->
-                  <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green" />
-                </svg>
-              </button>
-            </td>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
-                </svg>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
-                </svg>
-              </button>
-            </td>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
-                </svg>
-              </button>
-            </td>
-          </tr>
-        </table>
+        <img src="FamBashPlaceholder.jpg" alt="FamBashPlaceholder" width="250" height="250" />
       </div>
     </main>
 
