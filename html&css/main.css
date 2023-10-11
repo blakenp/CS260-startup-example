@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+}
+  
+header {
+    flex: 0 80px;
+}
+
+main {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row !important;
+    list-style: none;
+}
+  
+.navbar-brand {
+    margin-left: 0.6em;
+    border-bottom: solid rgb(255, 255, 255) thin;
+}
+  
+menu .nav-item {
+    padding: 0 0.5em;
+    font-size: 20px;
+}
