@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="about.css" />
+
+    <!-- Include bootstrap CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation elements -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">FamilyBash<sup>&reg;</sup></a>
+        <menu class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="play.html">Play</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="scores.html">Scores</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a></li>
+        </menu>
+      </nav>
+    </header>
+
+    <main>
+      <div id="picture" class="picture-box"><img width="400px" class="img-fluid" src="Happy Man.jpg" alt="random" /></div>
+      
+      <div class="paragraph-container">
+        <p>
+          FamilyBash is a party game aimed to get friends and family together for a fun time and to get them excited about family history!
+          You can start a game and invite your friends to the same game to play trivia games and other games as well.
+        </p>
+  
+        <p>
+          FamilyBash uses a webserver programmed in Rust to help offer a great user experience by making loading times faster, allowing 
+          users to focus more on the game rather than on the loading times! :D
+        </p>
+      </div>
+
+      <div id="quote" class="quote-container">
+        <q>When we connect and belong to each other we treat each other differently.</q>
+        <div>- Steve Rockwood</div>
+      </div>
+    </main>
+
+    <footer class="bg-primary text-white-100">
+      <div class="container-fluid">
+        <span class="text-reset">Author Name(s)</span>
+        <a class="text-reset github-link" href="https://github.com/blakenp/CS260-startup-example" target="_blank">Here is my Github</a>
+      </div>
+    </footer>
+  </body>
+</html>

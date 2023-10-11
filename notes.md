@@ -45,3 +45,17 @@ python -m http.server
 ### HTML and Deployment Notes
 
 I thought it was cool that you can just create a personalized bash script and run it to send files up to an EC2. Also, I hadn't used audio html tags before and was able to find ways to inspect pages to find where audio files are stored so I could use those files in any application I will create. Even though a lot of this was review, it was a good refresher and I still learned a couple of new things like how to make tables in HTML too.
+
+### CSS
+
+Wow, I still have a long way to go with styling better, but I feel like I got a much better feel for how to put things in flex boxes and how to style things in simple ways. There are so many pre-built css things through bootstrap and tailwind css, but it's ok to look those up if you can't remember because there are so many. Also, I learned that float: "right"; can put text at the far right side of the page. Cool! I also liked how you can choose a font for the whole app by just saying: 
+
+```
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+    font-family: 'Kalam', cursive;
+}
+```
+
+Overall, I felt like a grew and even though I don't like artistic things like styling all that much, this was actually kind of fun.

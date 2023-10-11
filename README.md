@@ -48,3 +48,14 @@ For this deliverable, I just added some extremely basic HTML that I will probabl
 - **Login** - Input box and placeholder text "Your name here" for the login input/submission button
 - **Database** - The leaderboard on the Scores page represents data from the Database.
 - **Websocket** - I put placeholder text for where the websocket connection will be made after clicking the "New Game" button.
+
+## CSS deliverable
+
+For this deliverable, I just styled the application so it doesn't look completely ugly and mainly added containers around elements and used some bootstrap to make elements pretty
+
+- **Header, footer, and main content body** - I just mainly made it so the header has spaced out menu items in a row format instead of the old column format. I also spaced text out in the header and footer and centered text in the main content body.
+- **Navigation elements** - I removed the underlines for the links and and evenly spaced them. I also added styling through bootstrap for active nav links to allow users to know which page they are currently on.
+- **Responsive to window resizing** - My app looks fine on laptops and smaller screen sizes.
+- **Application elements** - I made use of whitespace between the header and the footer on each page. I also contrasted elements by putting some text and image elements in styled div containers and made use of bootstraps styling for buttons, tables, and more.
+- **Application text content** - I used a font I liked from google fonts and used the same font across the pages of the app. I also put most big text bodies in div containers with background colors to make them pop.
+- **Application images** - I created a border radius for images to make them rounded and more smooth looking. I also put one in a div container with another background color and added padding to the image.
