@@ -7,6 +7,7 @@
     <link rel="icon" href="favicon.ico" />
 
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="about.css" />
 
     <!-- Include bootstrap CSS framework -->
     <link
@@ -35,19 +36,21 @@
     </header>
 
     <main>
-      <div id="picture" class="picture-box"><img width="400px" src="Happy Man.jpg" alt="random" /></div>
+      <div id="picture" class="picture-box"><img width="400px" class="img-fluid" src="Happy Man.jpg" alt="random" /></div>
+      
+      <div class="paragraph-container">
+        <p>
+          FamilyBash is a party game aimed to get friends and family together for a fun time and to get them excited about family history!
+          You can start a game and invite your friends to the same game to play trivia games and other games as well.
+        </p>
+  
+        <p>
+          FamilyBash uses a webserver programmed in Rust to help offer a great user experience by making loading times faster, allowing 
+          users to focus more on the game rather than on the loading times! :D
+        </p>
+      </div>
 
-      <p>
-        FamilyBash is a party game aimed to get friends and family together for a fun time and to get them excited about family history!
-        You can start a game and invite your friends to the same game to play trivia games and other games as well.
-      </p>
-
-      <p>
-        FamilyBash uses a webserver programmed in Rust to help offer a great user experience by making loading times faster, allowing 
-        users to focus more on the game rather than on the loading times! :D
-      </p>
-
-      <div id="quote">
+      <div id="quote" class="quote-container">
         <q>When we connect and belong to each other we treat each other differently.</q>
         <div>- Steve Rockwood</div>
       </div>

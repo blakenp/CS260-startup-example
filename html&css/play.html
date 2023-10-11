@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico" />
 
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="play.css" />
 
     <!-- Include bootstrap CSS framework -->
     <link
@@ -37,13 +38,17 @@
     </header>
 
     <main>
+      <div class="img-container">
+        <img class="fam-pic" src="FamBashPlaceholder.jpg" alt="FamBashPlaceholder" width="250" height="250" />
+      </div>
+
       <div class="players">
         Placings:
       </div>
-      <ul class="notification">
-        <li class="player-name">Tim 1st</li>
-        <li class="player-name">Jim 2nd</li>
-        <li class="player-name">Emma 3rd</li>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">Tim 1st</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Jim 2nd</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Emma 3rd</li>
       </ul>
 
       <!-- More formatting with old style HTML -->
@@ -55,17 +60,12 @@
       </div>
 
       <br />
-
-      <div>
+      <div class="text-container">
         <p>Here we will open a websocket connection to create a room for a new game that others can join.</p>
-        <button>New Game</button>
-        <p>Example room code id: HRET-FHT</p>
-      </div>
-
-      <br />
-
-      <div>
-        <img src="FamBashPlaceholder.jpg" alt="FamBashPlaceholder" width="250" height="250" />
+        <div class="button-container">
+          <button class="btn btn-primary">New Game</button>
+          <p>Example room code id: HRET-FHT</p>
+        </div>
       </div>
     </main>
 

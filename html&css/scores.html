@@ -7,6 +7,7 @@
     <link rel="icon" href="favicon.ico" />
 
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="scores.css" />
 
     <!-- Include bootstrap CSS framework -->
     <link
@@ -35,37 +36,41 @@
     </header>
 
     <main>
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Score</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <p>The placeholder values below will be obtained through a GET request made to the backend. We will potentially use DynamoDB to hold the data.</p>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>도윤 이</td>
-            <td>34</td>
-            <td>May 20, 2021</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Annie James</td>
-            <td>29</td>
-            <td>June 2, 2021</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Gunter Spears</td>
-            <td>7</td>
-            <td>July 3, 2020</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-container">
+        <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Score</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <div class="text-container">
+            <p>The placeholder values below will be obtained through a GET request made to the backend. We will potentially use DynamoDB to hold the data.</p>
+          </div>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>도윤 이</td>
+              <td>34</td>
+              <td>May 20, 2021</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Annie James</td>
+              <td>29</td>
+              <td>June 2, 2021</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Gunter Spears</td>
+              <td>7</td>
+              <td>July 3, 2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
 
     <footer class="bg-primary text-white-100">
