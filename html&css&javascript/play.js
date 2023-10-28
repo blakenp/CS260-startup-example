@@ -3,15 +3,12 @@ class Game {
     maxNumOfPlayers;
     gameID;
     prompt;
-    votes;
-    responsesIn;
 
     constructor(players, gameID, prompt) {
         this.players = players;
         this.maxNumOfPlayers = 4;
         this.gameID = gameID;
         this.prompt = prompt;
-        this.votes = [];
     }
 
     createGame() {
@@ -66,8 +63,53 @@ class Game {
     }
 
     vote() {
-        
+        const messageElement = document.querySelector("#waitMessage");
+        const currentUser = localStorage.getItem("username");
+    
+        const votePlayer = (currentIndex) => {
+            if (currentIndex < this.players.length) {
+                const playerName = this.players[currentIndex];
+    
+                if (playerName !== currentUser) {
+                    messageElement.innerHTML +=
+                        `<div class="event"><span class="player-event">${playerName}</span> voted for ${currentUser}</div>`;
+                }
+    
+                setTimeout(() => votePlayer(currentIndex + 1), 5000);
+
+                if (currentIndex === this.players.length - 1) {
+                    this.finalizeResults(); // Call finalizeResults when all votes are done
+                }
+            }
+        };
+    
+        votePlayer(0);
     }
+
+    finalizeResults() {
+        const messageElement = document.querySelector("#waitMessage");
+        const currentUser = localStorage.getItem("username");
+        messageElement.textContent = `${currentUser} wins!`
+
+        const placingsElement = document.querySelector(".list-group");
+        const currentUserPlacingElement = document.createElement("li");
+        currentUserPlacingElement.textContent = `${currentUser} 1st`;
+        placingsElement.appendChild(currentUserPlacingElement);
+
+        for (var i = 0; i < this.players.length - 1; i++) {
+            const currentPlayerPlacingElement = document.createElement("li");
+            if (i + 2 == 2) {
+                currentPlayerPlacingElement.textContent = `${this.players[i]} ${i + 2}nd`
+            } else if (i + 2 == 3) {
+                currentPlayerPlacingElement.textContent = `${this.players[i]} ${i + 2}rd`
+            }
+            else {
+                currentPlayerPlacingElement.textContent = `${this.players[i]} ${i + 2}th`
+            }
+            placingsElement.appendChild(currentPlayerPlacingElement);
+        }
+    }
+    
 }
 
 class Player {
@@ -114,6 +156,7 @@ if (window.location.href.indexOf("play.html") > -1) {
         const submitButtonElement = document.querySelector("#submissionButton");
         submitButtonElement.addEventListener("click", () => {
             game.submitResponse();
+            game.vote();
         });
     });
 }
