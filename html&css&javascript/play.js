@@ -108,6 +108,8 @@ class Game {
             }
             placingsElement.appendChild(currentPlayerPlacingElement);
         }
+
+        localStorage.setItem("today's winners", currentUser);
     }
     
 }
