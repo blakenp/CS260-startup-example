@@ -7,6 +7,8 @@
     <title>FamilyBash</title>
     <link rel="icon" href="favicon.ico" />
 
+    <script src="play.js"></script>
+    <script src="login.js"></script>
     <link rel="stylesheet" href="main.css" />
 
     <!-- Include bootstrap CSS framework -->
@@ -39,11 +41,11 @@
     <main>
       <h1>Welcome</h1>
       <p>Login to play</p>
-      <form class="sign-in-form" method="get" action="play.html">
+      <div class="sign-in-form">
         <label for="name">Name</label>
-        <input class="form-control" type="text" id="name" placeholder="Your name here" />
-        <button class="btn btn-success" type="submit">Login with FamilySearch</button>
-      </form>
+        <input class="form-control" type="text" id="username" placeholder="Your name here" />
+        <button class="btn btn-success" type="submit" onclick="login()">Login with FamilySearch</button>
+      </div>
       <div></div>
     </main>
 

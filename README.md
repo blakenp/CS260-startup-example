@@ -59,3 +59,12 @@ For this deliverable, I just styled the application so it doesn't look completel
 - **Application elements** - I made use of whitespace between the header and the footer on each page. I also contrasted elements by putting some text and image elements in styled div containers and made use of bootstraps styling for buttons, tables, and more.
 - **Application text content** - I used a font I liked from google fonts and used the same font across the pages of the app. I also put most big text bodies in div containers with background colors to make them pop.
 - **Application images** - I created a border radius for images to make them rounded and more smooth looking. I also put one in a div container with another background color and added padding to the image.
+
+## Javascript deliverable
+
+For this deliverable, I added javascript code that logged users in and displayed their username after logging in through localStorage. On top of this, I added some javascript that created a game interface and simulated the websocket messages that will be sent from users voting on other users' responses to jackbox game-like prompts about family history ancestor memories. 
+
+- **Login** - I added javascript support for future login functionality by just using localStorage to track who is logged in for now.
+- **Database** - I added future support for database storage by just injecting javascript usernames of the players that one games that day in the scores.html file
+- **Websocket** - I added a function that is practically async in nature due to the setTimeout function being called inside that simulates the future functionaliy of a websocket serving sending messages of votes on user responses in real time.
+- **Application Logic** - I added javascript that allows users to interact with the app by logging in, submitting a response to a text prompt, and after winning a game being able to see their username on the scores.html page. Will definitely add more, but again, I added minimal changes here due to our focus on learning Rust and building our websocket Rust server right now.

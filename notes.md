@@ -59,3 +59,7 @@ Wow, I still have a long way to go with styling better, but I feel like I got a 
 ```
 
 Overall, I felt like a grew and even though I don't like artistic things like styling all that much, this was actually kind of fun.
+
+### Javascript
+
+I already knew most things we were taught about javascript thanks to working for Dr. Clement's lab, but I enjoyed having more practice with injecting javascript into the DOM. I also liked reading up on await and async to understand better how that works.
