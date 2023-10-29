@@ -63,3 +63,22 @@ Overall, I felt like a grew and even though I don't like artistic things like st
 ### Javascript
 
 I already knew most things we were taught about javascript thanks to working for Dr. Clement's lab, but I enjoyed having more practice with injecting javascript into the DOM. I also liked reading up on await and async to understand better how that works.
+
+## Midterm Notes
+
+- Link html element generally just links outside sources to html like stylesheets, scripts, icons, etc.
+- #id and .classname are just for querying html elements by id and class name respectively
+- padding puts space between the content of an element and its inner border. You can push inner contend of div element away from its borders for example. margins puts space outside of an element though, like making space between the outer edges of div element and other elements surrounding div element
+- flex just allows elements to "flexibly" stretch to fill in availabel space in their element's sphere of space
+- arrow syntax functions just provide a simpler syntax for function declarations and executions
+- DOM is tree structure of html elements with attributes like textContent, id, classname, etc. document represents entire page. style.fontSize is an example of how to style DOM elements with injection/modification
+- The default CSS display property value for the HTML span element is "inline." This means that, by default, a spam element is displayed inline with the surrounding text or content. It doesn't create a line break, and its width and height are determined by its content.
+- image hyper link would be <a href="something.com"> which surrounds an image element
+- In the CSS box model, what is the ordering of the box layers starting at the inside and working out? It's Content, Padding, Border, Margin
+- #target::first-line { color: green } to set some text to green
+- ol is ordered list, ul is unordered list, and li is list item
+- <!DOCTYPE html> declare doc type as HTML
+- yes, you can add new properties to javascript objects
+- man command is used to display manual or docs for unix systems, ps shows process status of currently running processes, and wget gets something like downloading a file from the internet for example
+- the la command gives you a detailed list of all things in that director
+- port 80 is http protocol, port 443 is https, and port 22 is ssh
