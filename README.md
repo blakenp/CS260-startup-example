@@ -68,3 +68,13 @@ For this deliverable, I added javascript code that logged users in and displayed
 - **Database** - I added future support for database storage by just injecting javascript usernames of the players that one games that day in the scores.html file
 - **Websocket** - I added a function that is practically async in nature due to the setTimeout function being called inside that simulates the future functionaliy of a websocket serving sending messages of votes on user responses in real time.
 - **Application Logic** - I added javascript that allows users to interact with the app by logging in, submitting a response to a text prompt, and after winning a game being able to see their username on the scores.html page. Will definitely add more, but again, I added minimal changes here due to our focus on learning Rust and building our websocket Rust server right now.
+
+## Service deliverable
+
+For this deliverable, I just decided to change a lot of the design and went for a simple social media service that uses mongoDB and has several endpoints setup to handle logging in, logging out, and commenting on images and posting images. You can also edit comments, and delete images or even your account. I had my family test some of it out.
+
+- **Node.js/Express HTTP service** Done! I just set up the HTTP service with a nextjs backend instead though since I've already done a nodejs backend before. It was fun
+- **Static middleware for frontend** Done! Only requests from frontend are allowed through middleware
+- **Calls for third party endpoints** Done!
+- **Backend service endpoints** Done! I set up like 8-10 endpoints or something like that to handle several requests from the frontend
+- **Frontend calls service endpoints** Done! I used axios for the requests from the frontend to the backend
