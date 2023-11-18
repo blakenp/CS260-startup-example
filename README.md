@@ -86,3 +86,12 @@ For this deliverable, I just stored users, likes, comments, uploaded images, and
 - **MongoDB Atlas database created** Done!
 - **Endpoints for data** Done! I got 10 endpoints and all of them manipulate data by creating data, deleting it, updating it, or getting data through MongoDB services
 - **Stores data in MongoDB** - Done and done!
+
+## Login deliverable
+
+For this deliverable, I associate posted images with logged in users, and you can't actually access anything passed the login page if you aren't logged and have a JWT auth token grabbed upon the loading of each page through useEffect. I created context for authentication called useAuth() that has a method called upon loading each page that requires authentication
+
+- **User registration** Done! When clicking the sign up button, you can create an account
+- **Existing user** Done! Stores posted images according to the signed in user. Users can only delete images they have posted, and by clicking the myPage link on the nav bar, you can post more images, delete images, and change username and password in user setting by clicking on your profile pic
+- **Use MongoDB to store credentials** Done! I use a collection in my MongoDB database dedicated to user data, and that's where I store credentials like username and password. Password are encrypted as well
+- **Restricts functionality** Done! You can only access other users' pages, the community page, and your own page if you have already logged in. Session tokens expire after 1 hour, so after an hour you will have to log back in to access these pages again
