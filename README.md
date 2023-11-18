@@ -78,3 +78,11 @@ For this deliverable, I just decided to change a lot of the design and went for 
 - **Calls for third party endpoints** Done!
 - **Backend service endpoints** Done! I set up like 8-10 endpoints or something like that to handle several requests from the frontend
 - **Frontend calls service endpoints** Done! I used axios for the requests from the frontend to the backend
+
+## DB deliverable
+
+For this deliverable, I just stored users, likes, comments, uploaded images, and followers in the mongoDB database I used for the app
+
+- **MongoDB Atlas database created** Done!
+- **Endpoints for data** Done! I got 10 endpoints and all of them manipulate data by creating data, deleting it, updating it, or getting data through MongoDB services
+- **Stores data in MongoDB** - Done and done!
