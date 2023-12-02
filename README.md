@@ -95,3 +95,10 @@ For this deliverable, I associate posted images with logged in users, and you ca
 - **Existing user** Done! Stores posted images according to the signed in user. Users can only delete images they have posted, and by clicking the myPage link on the nav bar, you can post more images, delete images, and change username and password in user setting by clicking on your profile pic
 - **Use MongoDB to store credentials** Done! I use a collection in my MongoDB database dedicated to user data, and that's where I store credentials like username and password. Password are encrypted as well
 - **Restricts functionality** Done! You can only access other users' pages, the community page, and your own page if you have already logged in. Session tokens expire after 1 hour, so after an hour you will have to log back in to access these pages again
+
+## Websocket deliverable
+
+- **Backend Listens for Websocket connection** Done!
+- **Frontend makes Websocket connection** Done! The frontend makes 2 connections. One to create a game, in which the frontend connects to the rust websocket server, which creates a Game object and sends the randomly generated GameID back to the frontend, which is displayed on the frontend's dynamic gameID route. The other connection is to join a game, where players input the displayed gameID on another device and their username, and then the backend adds their Player object to the Game object to which the gameID belongs. Currently, you can join a game, but it is not yet playable.
+- **Data sent over Websocket connection** Done!
+- **WebSocket data displayed** Done! The frontend displays the server's response in creating a game in the form of the gameID
