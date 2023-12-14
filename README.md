@@ -102,3 +102,12 @@ For this deliverable, I associate posted images with logged in users, and you ca
 - **Frontend makes Websocket connection** Done! The frontend makes 2 connections. One to create a game, in which the frontend connects to the rust websocket server, which creates a Game object and sends the randomly generated GameID back to the frontend, which is displayed on the frontend's dynamic gameID route. The other connection is to join a game, where players input the displayed gameID on another device and their username, and then the backend adds their Player object to the Game object to which the gameID belongs. Currently, you can join a game, but it is not yet playable.
 - **Data sent over Websocket connection** Done!
 - **WebSocket data displayed** Done! The frontend displays the server's response in creating a game in the form of the gameID
+
+## React deliverable
+
+For this deliverable, we just made the frontend all in nextjs using create-next-app, and next uses rust and react logic in its underlying logic, so we were able to make react components, use useState, useEffect, and useContext hooks, and used useRouter and nextjs ```<Link>``` components to set up a router to navigate between pages.
+
+- **Bundled and transpiled** Done!
+- **Components** Set up page components for the home page, play page, and 2 dynamic route pages for game IDs and player IDs. Currently there is no button to navigate to the playerID dynamic route, but typing ```/player/ID``` in the search bar where ID is anything you want will take you to that route. Also set up NavBar and Footer components.
+- **Router** Set up routing between home page and player page and routing that logs out users if they are logged in using the NavBar component and set up dynamic game and player routes.
+- **Hooks** Set up useState hooks to keep track of authentication status, userInput, and websocket connections. Also used useContext hooks for creating an AuthContext Provider to wrap around other Components that require authentication to access.
