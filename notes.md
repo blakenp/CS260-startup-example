@@ -82,3 +82,101 @@ I already knew most things we were taught about javascript thanks to working for
 - man command is used to display manual or docs for unix systems, ps shows process status of currently running processes, and wget gets something like downloading a file from the internet for example
 - the la command gives you a detailed list of all things in that director
 - port 80 is http protocol, port 443 is https, and port 22 is ssh
+
+## Final Notes
+
+- HTTP uses port 80, HTTPS uses 443, and SSH uses 22
+- HTTP status code 300 means redirection needs to occur to complete the request. 301 means the requested resource has been moved permanently and 301 means requested resource has temporarily been moved to another location. 400 generally means the client made an error. 401 is unauthorized and 404 is resource not found. 403 is forbidden, even if authenticated. 500 is just a general internal server error code
+- ```content-type``` generally allows you to specify the type of data to be received by the Server and sent back to the client. The common types include:
+    **text/plain: Simple text.**
+    **text/html: HTML markup.**
+    **application/json: JSON data.**
+    **application/xml: XML data.**
+    **multipart/form-data: Used in forms that have file uploads.**
+- What do the following attributes of a cookie do?
+Domain
+Path
+SameSite
+HTTPOnly. Well, so Domain specifies where the cookie is valid. Path specifies the URL path for which the cookie is valid. SameSite is like a boolean. Strict will only allow the cookie to be sent in a first-party context. Lax will is sent with top level navigation, but not like cross-origin POST requests. None sends the cookie over all cross-origin requests, but can only be sent over HTTPS by being marked as a "secure" cookie.
+- Given the following MongoDB query
+{ cost: { $gt: 10 }, name: /fran.*/}
+select all of the matching documents.
+well, this would only give documents that have a cost val of greater than 10 and a name that matches the first chars of the regex of fran, so frank and francis would be considered matches for example
+- passwords in DBs should be stored as hashed passwords or salted hashed passwords (add random val of salt before hashing)
+- What is the WebSocket protocol used for? It's used for upgrading HTTP connections to websocket connections to make a full duplex connection between client and server
+- What is JSX and how are the curly braces rendered? JSX is JavaScript XML, and anything in the curly braces of components can render javascript functions in actions combined with HTML.
+- Assuming a HTML document with a 
+```<div id="root"></div>```
+element, what content will the following React component generate? PS, it will just be Welcome, followed by their usernames
+
+      function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+      }
+      function App() {
+        return (
+          <div>
+            <Welcome name="Sara" />
+            <Welcome name="Cahal" />
+            <Welcome name="Edite" />
+          </div>
+        );
+      }
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+- Assuming a HTML document with a 
+
+```<div id="root"></div>```
+
+element, what content will the following React component generate? PS, it would just be a list of 1 - 5.
+
+    function Numbers() { 
+      const numbers = [1, 2, 3, 4, 5];
+      const listItems = numbers.map((number) =>
+        <li>{number}</li>
+      );
+      return(<ul>{listItems}</ul>)
+    }
+    const root = ReactDOM.createRoot(document.getElementById('root')); 
+    root.render(<Numbers/>);
+
+- What does the following React component do? PS, it just renders a button and allows you to increment count by pressing it
+
+```function Example() {
+  // Declare a new state variable, which we'll call "count"  
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
+- What are React Hooks used for? They are used as state managers and for encapsulating code. Also for custom hooks to help avoid code duplication
+- What is the useEffect hook used for? Allows for DOM manipulation and for things to render upon page rendering or upon other state variable changes
+- What does this code do? PS, it sets up routing through the BrowserRouter and Routes components from React-Router and the * path sets up a custom 404 page to render when people navigate to a page that doesn't exist.
+
+```export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
+
+- What role does npm play in web development? It plays a vital role as a package manager and dependency management system. It also allows for downloading more packages and has its own registry and security features
+- package.json just holds all the project's dependencies and manages them and keeps track of their versions
+- the fetch function is a standard javascript API function used for making HTTP requests
+- What does node.js do? It allows devs to run javascript code on the server side and can handle a lot of concurrent connections. It also allows for localhost dev environments
+- Vite is a React framework that allows for fast builds and instant server start. It allows for webpack and babel stuff to allow for changes to be synced with localhost upon saving changes in your IDE to quickly see how changes would affect your site
